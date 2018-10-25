@@ -1,0 +1,30 @@
+[[0.35, 0, 0.2, 0.2], [0.35, 0.4, 0.2, 0.2], [0.1, 0, 0, 0.5], [0.1, 0, 0.9, 0.4]]
+
+local_corr:
+array([[0.35, 0.4 , 0.2 , 0.2 ],
+       [0.35, 0.  , 0.2 , 0.2 ],
+       [0.1 , 0.  , 0.9 , 0.5 ],
+       [0.1 , 0.  , 0.8 , 0.4 ]])
+
+threshold: 0.21
+
+significant_local_corr:
+array([[ True,  True, False, False],
+       [ True, False, False, False],
+       [False, False,  True,  True],
+       [False, False,  True,  True]])
+
+label_significant_local_corr:
+array([[1, 1, 0, 0],
+       [1, 0, 0, 0],
+       [0, 0, 2, 2],
+       [0, 0, 2, 2]])
+
+max_significant_local_corr:
+array([[0, 0,   0,   0],
+       [0, 0,   0,   0],
+       [0, 0, 0.9, 0.5],
+       [0, 0, 0.8, 0.4]])
+
+test_statistic = 0.9
+optimal_scale = [3, 3]
